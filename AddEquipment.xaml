@@ -12,21 +12,21 @@
         <!--Beginning of stack panel-->
         <StackPanel Orientation="Vertical" Grid.Column="1" Margin="50">
           <!--Lend out Title-->
-          <Label x:Name="txtLendOut" Content="Lend Out" HorizontalAlignment="Center"/>
+            <Label  Content="Lend Out" FontSize="25" HorizontalAlignment="Center"/>
           <!--Name Label & Textbox-->
-          <Label Content="Name:" Target="{Binding ElementName=txtName}"/>
+          <Label Content="_Name:" Target="{Binding ElementName=txtName}"/>
           <TextBox x:Name="txtName" />
           <!--Employee ID Label & Textbox-->
-          <Label Content="EmployeeID" Target="{Binding ElementName=txtEmployeeID}"/>
+          <Label Content="_EmployeeID:" Target="{Binding ElementName=txtEmployeeID}"/>
           <TextBox x:Name="txtEmployeeID" />
           <!--Description Label & Textbox-->
-          <Label Content="Description of Equipment" Target="{Binding ElementName=txtDescription}"/>
+          <Label Content="_Description of Equipment:" Target="{Binding ElementName=txtDescription}"/>
           <TextBox x:Name="txtDescription" />
           <!--Phone Number Label & Textbox-->
-          <Label Content="Contact Phone #" Target="{Binding ElementName=txtPhoneNumber}"/>
+          <Label Content="_Contact Phone #:" Target="{Binding ElementName=txtPhoneNumber}"/>
           <TextBox x:Name="txtPhoneNumber" />
           <!--Button to add to the database-->
-          <Button x:Name="btnAdd" Content="Add to Database" Height="50" Width="200" Margin="50" Click="btnAdd_Click" />
+          <Button x:Name="btnAdd" Content="Add to Database" FontSize="15" Height="30" Width="200" Margin="50" Click="btnAdd_Click" />
         </StackPanel>
         <!--End of Stack panel-->
     </Grid>

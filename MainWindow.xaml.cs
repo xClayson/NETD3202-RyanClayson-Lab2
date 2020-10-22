@@ -2,6 +2,8 @@
  * Name: Ryan Clayson
  * Date: 10/19/2020
  * Course: NETD 3202
+ * Purpose: The purpose of this lab is to add records to the database. Then to retrieve from database.
+ * Resources: Lab Database Basics Demo by Alaadin Addas 
  */
 
 using System;
@@ -30,8 +32,6 @@ namespace NETD3202_RyanClayson_Lab2
         {
             //Initialization
             InitializeComponent();
-            Control addEquipment = new AddEquipment();
-            SettingsContentPanel.Children.Add(addEquipment);
         }
         //If the user selects lend out or view lend out
         private void SettingsListViewSelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -54,6 +54,12 @@ namespace NETD3202_RyanClayson_Lab2
                     //ViewEquipment is another custom control used
                     Control viewEquipment = new ViewEquipment();
                     this.SettingsContentPanel.Children.Add(viewEquipment);
+                }
+                if (listview.SelectedItem.Equals(lsvItEmployeeSearch))
+                {
+                    //SearchEmployee is another customer control used 
+                    Control searchEmployee = new EmployeeSearch();
+                    this.SettingsContentPanel.Children.Add(searchEmployee);
                 }
             }
         }

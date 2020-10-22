@@ -8,8 +8,8 @@
              d:DesignHeight="450" d:DesignWidth="800">
   <!--Beginning of  grid-->
     <Grid>
-        <StackPanel Grid.Column="1" Margin="50">
-          <Label x:Name="txtViewEquipmentLent" Content="View Equipment Lent Out" HorizontalAlignment="Center"/>
+        <StackPanel Grid.Column="1" Margin="50" Orientation="Vertical">
+          <Label Content="View Equipment Lent Out" FontSize="25" HorizontalAlignment="Center" />
           <!--Start of data grid-->
           <DataGrid Name="equipmentGrid"/>
         </StackPanel>

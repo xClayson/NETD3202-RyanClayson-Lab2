@@ -18,6 +18,7 @@
         <ListView SelectionChanged="SettingsListViewSelectionChanged">
           <ListViewItem x:Name ="lsvItLendOut"  Content="Lend Out" Height="50" />
           <ListViewItem x:Name ="lsvItViewLendOut"  Content="View Lend Out" Height="50"/>
+          <ListViewItem x:Name ="lsvItEmployeeSearch" Content="Search" Height="50"/>
         </ListView>
       </StackPanel>
       <!--Start of Second Grid-->
